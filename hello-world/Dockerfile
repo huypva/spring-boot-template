@@ -1,19 +1,19 @@
 FROM maven:3.6.3-jdk-11 AS builder
-WORKDIR /workdir/service-A
-COPY pom.xml /workdir/service-A/pom.xml
+WORKDIR /workdir/hello-world
+COPY pom.xml /workdir/hello-world/pom.xml
 RUN mvn dependency:go-offline
 
-COPY src /workdir/service-A/src
+COPY src /workdir/hello-world/src
 RUN mvn install
 RUN mkdir  -p target/depency
-WORKDIR /workdir/service-A/target/dependency
+WORKDIR /workdir/hello-world/target/dependency
 RUN jar -xf ../*.jar
 
 FROM openjdk:11-jre-slim
 
 EXPOSE 8081
 VOLUME /tmp
-ARG DEPENDENCY=/workdir/service-A/target/dependency
+ARG DEPENDENCY=/workdir/hello-world/target/dependency
 COPY --from=builder ${DEPENDENCY}/BOOT-INF/lib /app/lib
 COPY --from=builder ${DEPENDENCY}/META-INF /app/META-INF
 COPY --from=builder ${DEPENDENCY}/BOOT-INF/classes /app
