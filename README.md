@@ -25,8 +25,8 @@ The example project for StringBoot service
     [Docker Compose](https://github.com/docker/compose)
 
 ## Start project
-## Start project in local
-## Start project in docker 
+### Start project in local
+### Start project in docker 
 
 - Start project
 ```console
