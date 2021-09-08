@@ -21,20 +21,20 @@
 	</properties>
 
 	<dependencies>
-		<!--spring mvc, rest-->
+		<!--  spring mvc, rest  -->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
 
-		<!--  Lombok  -->
+		<!--  lombok  -->
 		<dependency>
 			<artifactId>lombok</artifactId>
 			<groupId>org.projectlombok</groupId>
 			<optional>true</optional>
 		</dependency>
 
-		<!--Unit test-->
+		<!--  unit test  -->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
