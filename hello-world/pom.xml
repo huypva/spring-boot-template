@@ -27,6 +27,13 @@
 			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
 
+		<!--  Lombok  -->
+		<dependency>
+			<artifactId>lombok</artifactId>
+			<groupId>org.projectlombok</groupId>
+			<optional>true</optional>
+		</dependency>
+
 		<!--Unit test-->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
