@@ -26,20 +26,30 @@ The example project for StringBoot service
 
 ## Start project
 ### Start project in local
+
+- Install infrastructure
+
+- Build project
+```shell script
+$ mvn clean package
+$ cd spring-boot-kafka
+$ mvn spring-boot:run
+...
+```
+
 ### Start project in docker 
 
 - Start project
-```console
+```shell script
 docker-compose up -d
 ```
 
-- Some request & test
-
-
 - Stop project
-```console
+```shell script
 docker-compose down
 ```
+
+## Run testing
 
 ## Contribute
 
