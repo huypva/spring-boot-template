@@ -31,9 +31,9 @@ The example project for StringBoot service
 
 - Build project
 ```shell script
-$ mvn clean package
+$ mvnw clean package
 $ cd spring-boot-kafka
-$ mvn spring-boot:run
+$ mvnw spring-boot:run
 ...
 ```
 
