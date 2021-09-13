@@ -19,7 +19,6 @@ public class Controller {
   GreetUseCase greetUseCase;
 
   @GetMapping("/greet")
-  @ResponseBody
   public Greeting greet(@RequestParam(name = "name") String name) {
     return greetUseCase.greet(name);
   }
