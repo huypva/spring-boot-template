@@ -9,8 +9,14 @@ import org.springframework.stereotype.Component;
 @Component
 public class RandomIdProvider implements IdProvider {
 
+  private Random random;
+
+  public RandomIdProvider () {
+    random = new Random();
+  }
+
   @Override
   public int genId() {
-    return new Random().nextInt();
+    return random.nextInt();
   }
 }
