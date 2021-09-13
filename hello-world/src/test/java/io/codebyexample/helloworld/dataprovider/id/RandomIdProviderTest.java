@@ -30,7 +30,7 @@ class RandomIdProviderTest {
   @Test
   void genId() {
     assertThat(randomIdProvider).isNotNull();
-    assertThat(randomIdProvider.genId()).isGreaterThan(0);
+    assertThat(randomIdProvider.genId()).isGreaterThan(Integer.MIN_VALUE);
     assertThat(randomIdProvider.genId()).isLessThan(Integer.MAX_VALUE);
   }
 }
