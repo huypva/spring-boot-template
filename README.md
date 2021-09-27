@@ -24,29 +24,27 @@ The example project for StringBoot service
   - Linux: [Install Docker](https://www.docker.com/get-started) and then
     [Docker Compose](https://github.com/docker/compose)
 
-## Start project
-### Start project in local
+## Start infrastructure
 
-- Install infrastructure
+```shell script
+$ docker-compose -f ./docker-compose-infrastructure.yml -p sa-sample-infrastructure up -d
+```
+
+## Start services
+### Start services in local
 
 - Build project
 ```shell script
 $ ./mvnw clean package
 $ cd hello-word
-$ ./mvnw spring-boot:run
+$ ../mvnw spring-boot:run
 ...
 ```
 
-### Start project in docker 
+### Start services in docker 
 
-- Start project
 ```shell script
-docker-compose up -d
-```
-
-- Stop project
-```shell script
-docker-compose down
+$ docker-compose -f ./docker-compose-service.yml -p sa-sample-service up -d
 ```
 
 ## Run testing
@@ -55,6 +53,15 @@ docker-compose down
 curl http://localhost:8081/greet?name=World
 ```
 
+## Stop project
+
+- Kill project if start in local mode
+- Stop infrastructure & services in docker
+
+```shell script
+$ docker-compose -f ./docker-compose-infrastructure.yml down
+$ docker-compose -f ./docker-compose-service.yml down
+```
 
 ## Contribute
 
