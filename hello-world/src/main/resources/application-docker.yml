@@ -3,3 +3,4 @@ server:
 spring:
   application:
     name: "hello-word"
+infra_host: ${INFRA_HOST}
