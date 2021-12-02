@@ -27,16 +27,17 @@ The example project for StringBoot service
 ## Start infrastructure
 
 ```shell script
-$ docker-compose -f ./docker-compose-infrastructure.yml -p spring-boot-infrastructure up -d
+$ cd infrastructure
+$ docker-compose up -d
 ```
 
 ## Start services
 ### Start services in local
 
-- Build project
+- Build & start project
 ```shell script
-$ ./mvnw clean package
 $ cd hello-word
+$ ../mvnw clean package
 $ ../mvnw spring-boot:run
 ...
 ```
@@ -45,6 +46,12 @@ $ ../mvnw spring-boot:run
 
 ```shell script
 $ docker-compose -f ./docker-compose-service.yml -p spring-boot-service up -d
+```
+
+Run multiple instances
+
+```shell script
+$ docker-compose -f ./docker-compose-service.yml -p spring-boot-service up -d --scale hello-world=2
 ```
 
 ## Run testing
