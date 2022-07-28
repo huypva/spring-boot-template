@@ -1,4 +1,4 @@
-package io.codebyexample.helloworld;
+package io.github.huypva.helloworld;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

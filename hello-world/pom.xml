@@ -6,11 +6,11 @@
 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
-		<version>2.2.6.RELEASE</version>
+		<version>2.5.4</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 
-	<groupId>io.codebyexample</groupId>
+	<groupId>io.github.huypva</groupId>
 	<artifactId>hello-world</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>Hello World</name>

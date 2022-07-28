@@ -36,7 +36,7 @@ $ docker-compose up -d
 
 - Build & start project
 ```shell script
-$ cd hello-word
+$ cd hello-world
 $ ../mvnw clean package
 $ ../mvnw spring-boot:run
 ...

@@ -1,10 +1,10 @@
-package io.codebyexample.helloworld.core.usecase;
+package io.github.huypva.helloworld.core.usecase;
 
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.mockito.BDDMockito.given;
 
-import io.codebyexample.helloworld.core.entity.Greeting;
-import io.codebyexample.helloworld.dataprovider.id.RandomIdProvider;
+import io.github.huypva.helloworld.core.entity.Greeting;
+import io.github.huypva.helloworld.dataprovider.id.RandomIdProvider;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.springframework.beans.factory.annotation.Autowired;

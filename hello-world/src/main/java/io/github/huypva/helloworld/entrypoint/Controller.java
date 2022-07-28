@@ -1,7 +1,7 @@
-package io.codebyexample.helloworld.entrypoint;
+package io.github.huypva.helloworld.entrypoint;
 
-import io.codebyexample.helloworld.core.entity.Greeting;
-import io.codebyexample.helloworld.core.usecase.GreetUseCase;
+import io.github.huypva.helloworld.core.entity.Greeting;
+import io.github.huypva.helloworld.core.usecase.GreetUseCase;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;

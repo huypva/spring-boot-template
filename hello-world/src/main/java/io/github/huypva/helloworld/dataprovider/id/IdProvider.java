@@ -1,4 +1,4 @@
-package io.codebyexample.helloworld.dataprovider.id;
+package io.github.huypva.helloworld.dataprovider.id;
 
 /**
  * @author huypva

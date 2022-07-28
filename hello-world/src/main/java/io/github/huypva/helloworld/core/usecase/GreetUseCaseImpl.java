@@ -1,7 +1,7 @@
-package io.codebyexample.helloworld.core.usecase;
+package io.github.huypva.helloworld.core.usecase;
 
-import io.codebyexample.helloworld.core.entity.Greeting;
-import io.codebyexample.helloworld.dataprovider.id.IdProvider;
+import io.github.huypva.helloworld.core.entity.Greeting;
+import io.github.huypva.helloworld.dataprovider.id.IdProvider;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
