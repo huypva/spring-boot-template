@@ -70,6 +70,18 @@ $ docker-compose -f ./docker-compose-infrastructure.yml -p spring-boot-infrastru
 $ docker-compose -f ./docker-compose-service.yml -p spring-boot-service down
 ```
 
-## Contribute
+## Contributing
+
+The code is open sourced. I encourage fellow developers to contribute and help improve it!
+
+- Fork it
+- Create your feature branch (git checkout -b new-feature)
+- Ensure all tests are passing
+- Commit your changes (git commit -am 'Add some feature')
+- Push to the branch (git push origin my-new-feature)
+- Create new Pull Request
 
 ## Reference
+
+## License
+This project is licensed under the Apache License v2.0. Please see LICENSE.md located at the project's root for more details.
