@@ -29,29 +29,21 @@ The example project for StringBoot service
 
 - Build & start project
 ```shell script
-$ cd hello-world
-$ ../mvnw clean package
-$ ../mvnw spring-boot:run
+$ ./mvnw -f ./hello-world clean package
+$ ./mvnw -f ./hello-world spring-boot:run
 ...
 ```
 
 ### Start services in docker 
 
 ```shell script
-$ docker-compose -f ./docker-compose-service.yml -p spring-boot-service up -d
-$ docker-compose up -d -f docker-compose/hello-world-service.yml
-```
-
-Run multiple instances
-
-```shell script
-$ docker-compose -f ./docker-compose-service.yml -p spring-boot-service up -d --scale hello-world=2
+$ docker-compose -f ./docker-compose/hello-world-service.yml up -d
 ```
 
 ## Run testing
 
 ```shell script
-curl http://localhost:8081/greet?name=World
+$ curl http://localhost:8081/greet?name=World
 ```
 
 ## Stop project
@@ -60,8 +52,7 @@ curl http://localhost:8081/greet?name=World
 - Stop infrastructure & services in docker
 
 ```shell script
-$ docker-compose -f ./docker-compose-infrastructure.yml -p spring-boot-infrastructure down
-$ docker-compose -f ./docker-compose-service.yml -p spring-boot-service down
+$ docker-compose -f ./docker-compose/hello-world-service.yml down
 ```
 
 ## Contributing
