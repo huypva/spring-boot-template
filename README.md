@@ -24,13 +24,6 @@ The example project for StringBoot service
   - Linux: [Install Docker](https://www.docker.com/get-started) and then
     [Docker Compose](https://github.com/docker/compose)
 
-## Start infrastructure
-
-```shell script
-$ cd infrastructure
-$ docker-compose up -d
-```
-
 ## Start services
 ### Start services in local
 
@@ -46,6 +39,7 @@ $ ../mvnw spring-boot:run
 
 ```shell script
 $ docker-compose -f ./docker-compose-service.yml -p spring-boot-service up -d
+$ docker-compose up -d -f docker-compose/hello-world-service.yml
 ```
 
 Run multiple instances
