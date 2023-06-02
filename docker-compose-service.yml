@@ -7,4 +7,4 @@ services:
       - spring_profiles_active=docker
       - INFRA_HOST=host.docker.internal
     ports:
-      - 8081-8083:8081
+      - 8081-8083:8080
