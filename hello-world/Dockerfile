@@ -14,7 +14,7 @@ RUN jar -xf ../*.jar
 
 FROM openjdk:17.0.1-jdk-slim
 ARG SERVICE_NAME
-EXPOSE 8081
+EXPOSE 8080
 VOLUME /tmp
 ARG DEPENDENCY=/workdir/${SERVICE_NAME}/target/dependency
 COPY --from=builder ${DEPENDENCY}/BOOT-INF/lib /app/lib
