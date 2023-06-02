@@ -2,5 +2,5 @@ server:
   port : 8080
 spring:
   application:
-    name: "hello-word"
+    name: "hello-world"
 infra_host: ${INFRA_HOST}
